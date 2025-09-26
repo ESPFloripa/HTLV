@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia HTLV para Atenção Primária</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scroll-behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Active link styling */
+        .nav-link.active {
+            font-weight: 700;
+            color: #ffffff; /* white */
+        }
+        .answer-label.selected {
+            background-color: #dbeafe; /* blue-100 */
+            border-color: #3b82f6; /* blue-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold text-white">HTLV (vírus-T linfotrópico humano)</h1>
+                <p class="text-md text-gray-300 mt-1">Um guia completo para os profissionais que atuam na Atenção Primária</p>
+            </div>
+            <!-- Navigation Bar -->
+            <nav class="mt-4">
+                <ul class="flex justify-center space-x-4 sm:space-x-8 text-sm sm:text-base">
+                    <li><a href="#resumo" class="nav-link text-gray-300 hover:text-white transition duration-300">Resumo</a></li>
+                    <li><a href="#semtempo" class="nav-link text-gray-300 hover:text-white transition duration-300">#semtempo</a></li>
+                    <li><a href="#aprofundar" class="nav-link text-gray-300 hover:text-white transition duration-300">Aprofunde-se</a></li>
+                    <li><a href="#quiz" class="nav-link text-gray-300 hover:text-white transition duration-300">Quiz Interativo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
+
+        <!-- Sessão 1: Resumo Detalhado -->
+        <section id="resumo" class="mb-12 bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-700 mb-6 border-b-2 border-blue-200 pb-2 text-center">O que é o HTLV? Um Resumo Visual</h2>
+            
+            <!-- Introduction -->
+            <div class="text-center max-w-3xl mx-auto mb-8">
+                <p class="text-gray-700 leading-relaxed">
+                    O <strong>Vírus Linfotrópico de Células T Humanas (HTLV)</strong>, primeiro retrovírus oncogênico humano descoberto, infecta linfócitos T. O Brasil é uma das maiores áreas endêmicas do mundo, com uma estimativa de até <strong>2,5 milhões</strong> de pessoas vivendo com o vírus.
+                </p>
+            </div>
+
+            <!-- Grid Layout for illustrated cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+
+                <!-- Card: Vias de Transmissão -->
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-200 flex flex-col">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-4">Como ocorre a transmissão?</h3>
+                    <p class="text-sm text-gray-600 mb-4">Pela transferência de linfócitos infectados em fluidos corporais.</p>
+                    <ul class="space-y-4 flex-grow">
+                        <li class="flex items-start">
+                             <svg class="w-8 h-8 text-blue-600 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" /></svg>
+                            <div>
+                                <h4 class="font-semibold">Vertical</h4>
+                                <p class="text-gray-700">Principalmente pela <strong>amamentação</strong> (risco de 20-30%).</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                             <svg class="w-8 h-8 text-blue-600 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg>
+                            <div>
+                                <h4 class="font-semibold">Sexual</h4>
+                                <p class="text-gray-700">Risco de ~1%/ano em parcerias estáveis. Mais eficiente do homem para a mulher.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                           <svg class="w-8 h-8 text-blue-600 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>
+                            <div>
+                                <h4 class="font-semibold">Parenteral</h4>
+                                <p class="text-gray-700">Transfusões (pré-1993), transplantes, compartilhamento de agulhas.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Card: Prevalência e Fatores de Risco -->
+                <div class="bg-yellow-50 p-6 rounded-lg border border-yellow-200 flex flex-col">
+                    <h3 class="text-xl font-semibold text-yellow-800 mb-4">Prevalência e Fatores de Risco</h3>
+                     <p class="text-sm text-gray-600 mb-4">A prevalência é maior em mulheres, aumenta com a idade e é influenciada por determinantes sociais.</p>
+                    <ul class="space-y-4 flex-grow">
+                        <li class="flex items-start">
+                             <svg class="w-6 h-6 text-yellow-600 mr-4 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg>
+                            <div>
+                                <h4 class="font-semibold">Distribuição Global</h4>
+                                <p class="text-gray-700">Endêmico no Japão, África, Caribe e América do Sul, incluindo o Brasil.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                           <svg class="w-6 h-6 text-yellow-600 mr-4 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-4.663l.001.109m-8.232 8.232c.607.083 1.238.12 1.885.12 2.9 0 5.603-.996 7.631-2.673m-7.631 2.673a11.962 11.962 0 01-5.424-2.105m-3.158.515a4.503 4.503 0 01-2.45-3.033m0 0c-.35-.922-.5-1.943-.5-3.033 0-1.734.54-3.36 1.456-4.735A4.503 4.503 0 018.25 4.5c1.734 0 3.36.54 4.735 1.456A4.503 4.503 0 0118 9c0 1.09-.15 2.11-.5 3.032m-3.158-.515c-.43.43-.923.786-1.458 1.075M3.158 15.485A11.962 11.962 0 018.624 21a12.318 12.318 0 018.74-3.872m-1.528-3.033c.29.204.56.426.81.672A11.962 11.962 0 0121 12a11.962 11.962 0 01-5.424 9.395m-3.158-.515A4.503 4.503 0 019 13.5c-1.734 0-3.36-.54-4.735-1.456" /></svg>
+                            <div>
+                                <h4 class="font-semibold">Populações Vulneráveis</h4>
+                                <p class="text-gray-700">Prevalência maior no Norte/Nordeste, em mulheres e pessoas negras/pardas com menor escolaridade.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Card: Repercussões da Infecção -->
+                <div class="bg-green-50 p-6 rounded-lg border border-green-200 flex flex-col">
+                    <h3 class="text-xl font-semibold text-green-800 mb-4">Quais as repercussões clínicas?</h3>
+                    <div class="space-y-4 flex-grow flex flex-col justify-center">
+                        <div class="flex items-center">
+                            <svg class="w-12 h-12 text-green-600 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9 9.75h.008v.008H9V9.75zm6 0h.008v.008H15V9.75z" /></svg>
+                            <div>
+                                <h4 class="font-bold text-2xl text-green-700">90-95%</h4>
+                                <p class="text-gray-700">Permanecem <strong>assintomáticos</strong> por toda a vida.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-6">
+                            <svg class="w-12 h-12 text-red-600 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 16.5a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9 9.75h.008v.008H9V9.75zm6 0h.008v.008H15V9.75z" /></svg>
+                            <div>
+                                <h4 class="font-bold text-2xl text-red-700">5-10%</h4>
+                                <p class="text-gray-700">Podem desenvolver doenças graves associadas ao <strong>HTLV-1</strong>:</p>
+                                <ul class="list-disc list-inside text-sm mt-1 text-gray-600">
+                                   <li><strong>ATLL</strong> (Leucemia-Linfoma)</li>
+                                   <li><strong>HAM/TSP</strong> (Mielopatia)</li>
+                                   <li>Outras doenças inflamatórias (uveíte, dermatites).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card: Prevenção -->
+                 <div class="bg-red-50 p-6 rounded-lg border border-red-200 flex flex-col">
+                    <h3 class="text-xl font-semibold text-red-800 mb-4">Como Prevenir?</h3>
+                    <p class="text-sm text-gray-600 mb-4">Ações focadas em interromper as principais vias de transmissão.</p>
+                    <ul class="space-y-4 flex-grow">
+                        <li class="flex items-start">
+                           <svg class="w-6 h-6 text-red-600 mr-4 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+                            <div>
+                                <h4 class="font-semibold">Testagem Pré-Natal e Contraindicação da Amamentação</h4>
+                                <p class="text-gray-700">Testar gestantes e, se positivo, inibir lactação e fornecer fórmula láctea.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                           <svg class="w-6 h-6 text-red-600 mr-4 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <div>
+                                <h4 class="font-semibold">Uso de Preservativos</h4>
+                                <p class="text-gray-700">Essencial para prevenir a transmissão sexual.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-4 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                            <div>
+                                <h4 class="font-semibold">Redução de Danos e Segurança Sanguínea</h4>
+                                <p class="text-gray-700">Não compartilhar agulhas e testagem obrigatória em bancos de sangue/órgãos.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <!-- Card: Manejo Clínico -->
+            <div class="bg-gray-100 p-6 rounded-lg border border-gray-200 mt-8">
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-gray-600 mr-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h12A2.25 2.25 0 0020.25 14.25V5.25A2.25 2.25 0 0018 3H6A2.25 2.25 0 003.75 3zM1.5 15.75h1.5v1.5H1.5v-1.5zM21 15.75h1.5v1.5H21v-1.5zM3.75 18h15a1.5 1.5 0 011.5 1.5v3a1.5 1.5 0 01-1.5 1.5h-15a1.5 1.5 0 01-1.5-1.5v-3a1.5 1.5 0 011.5-1.5z" /></svg>
+                    <div>
+                         <h3 class="text-xl font-semibold text-gray-800 mb-1">Manejo da Infecção</h3>
+                         <p class="text-gray-700">Não há cura, vacina, PEP ou PrEP. O manejo consiste no <strong>acompanhamento clínico</strong> regular para monitorar o surgimento de doenças associadas, aconselhar sobre prevenção da transmissão e oferecer suporte psicossocial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sessão 2: #semtempo -->
+        <section id="semtempo" class="mb-12 bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-700 mb-6 border-b-2 border-blue-200 pb-2">🚀 #semtempo? Sem problemas! 👇</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Video Column -->
+                <div class="w-full">
+                    <div class="rounded-lg overflow-hidden shadow-md aspect-video">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/KCl0flo70IE" title="Vídeo-Resumo HTLV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                     <h3 class="font-semibold text-lg text-center mt-3">🎬 Vídeo-Resumo</h3>
+                     <p class="text-gray-600 text-sm text-center mt-1">Precisa visualizar a informação? Assista a este resumo rápido.</p>
+                </div>
+                <!-- Links Column -->
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4 bg-gray-50 p-4 rounded-lg border hover:shadow-md transition-shadow">
+                        <span class="text-3xl mt-1">🎧</span>
+                        <div>
+                            <h3 class="font-semibold text-lg">Podcast-Resumo</h3>
+                            <p class="text-gray-600">Sua dose de conhecimento no fone de ouvido! Perfeito para o trânsito ou a pausa para o café.</p>
+                            <a href="https://drive.google.com/file/d/1TksfVNNcEyy3WPfr-rOdEjecWn130bB7/view?usp=drive_link" target="_blank" class="text-blue-600 hover:underline inline-block mt-2 font-medium">Ouvir agora &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4 bg-gray-50 p-4 rounded-lg border hover:shadow-md transition-shadow">
+                         <span class="text-3xl mt-1">🧠</span>
+                        <div>
+                            <h3 class="font-semibold text-lg">Chat Interativo</h3>
+                            <p class="text-gray-600">Tire suas dúvidas de forma rápida e prática com nosso assistente virtual.</p>
+                            <a href="http://bit.ly/chathtlv" target="_blank" class="text-blue-600 hover:underline inline-block mt-2 font-medium">Iniciar conversa &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sessão 3: Aprofundar -->
+        <section id="aprofundar" class="mb-12 bg-white p-8 rounded-lg shadow-lg text-center">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">Quer se aprofundar?</h2>
+            <p class="text-gray-600 mb-4">Acesse o guia completo em PDF para consulta detalhada, fluxogramas e referências.</p>
+            <a href="https://drive.google.com/file/d/1LKC_9fvka_JsTleUZ2n0pyv7NLUf_QXL/view?usp=sharing" target="_blank" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 inline-block">Baixar Material de Consulta</a>
+        </section>
+
+        <!-- Sessão 4: Quiz Interativo -->
+        <section id="quiz" class="mb-12 bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-700 mb-6 text-center">Teste seus conhecimentos!</h2>
+            <div id="quiz-container" class="max-w-2xl mx-auto min-h-[350px]">
+                <!-- Quiz content is dynamically generated here -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="font-semibold">Conhecimento prático para otimizar sua rotina.</p>
+            <p class="text-gray-400 text-sm mt-1">Acesse nossos materiais para ficar por dentro de tudo!</p>
+            <div class="mt-4 border-t border-gray-700 pt-4">
+                <p class="text-xs text-gray-500">Esta é uma produção do Departamento de Gestão da Clínica em parceria com a Escola de Saúde Pública de Florianópolis.</p>
+                <p class="text-xs text-gray-500 mt-1">© Secretaria Municipal de Saúde de Florianópolis</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const quizContainer = document.getElementById('quiz-container');
+        const questions = [
+            {
+                question: "Qual é a principal via de transmissão vertical do HTLV?",
+                answers: { a: "Durante o parto vaginal", b: "Transplacentária", c: "Amamentação" },
+                correctAnswer: "c"
+            },
+            {
+                question: "A maioria das pessoas com HTLV-1 desenvolverá doenças graves como ATLL ou HAM/TSP.",
+                answers: { a: "Verdadeiro", b: "Falso" },
+                correctAnswer: "b"
+            },
+            {
+                question: "Qual das seguintes ações é uma medida de prevenção eficaz contra a transmissão do HTLV?",
+                answers: { a: "Vacinação anual", b: "Uso de preservativos nas relações sexuais", c: "Profilaxia Pós-Exposição (PEP)" },
+                correctAnswer: "b"
+            },
+            {
+                question: "Para uma criança exposta ao HTLV, o teste sorológico para diagnóstico deve ser feito preferencialmente:",
+                answers: { a: "Logo após o nascimento", b: "Aos 6 meses de idade", c: "A partir dos 18 meses de idade" },
+                correctAnswer: "c"
+            },
+            {
+                question: "Além de gestantes, para quem o rastreio de HTLV é fortemente recomendado?",
+                answers: { a: "Apenas pessoas com sintomas neurológicos", b: "Apenas doadores de sangue", c: "Parcerias sexuais e familiares de 1º grau de pessoas com HTLV", d: "Todos os adultos acima de 50 anos" },
+                correctAnswer: "c"
+            },
+            {
+                question: "Qual achado clínico levanta forte suspeita para Leucemia-Linfoma de Células T do Adulto (ATLL)?",
+                answers: { a: "Perda de força progressiva nas pernas", b: "Olhos e boca secos", c: "Linfonodos aumentados generalizadamente e hipercalcemia", d: "Visão embaçada" },
+                correctAnswer: "c"
+            },
+            {
+                question: "Qual é a recomendação crucial para uma gestante com HTLV confirmado para prevenir a transmissão ao bebê?",
+                answers: { a: "Realizar uma cesariana eletiva", b: "Tomar antirretrovirais no terceiro trimestre", c: "Contraindicar a amamentação e inibir a lactação", d: "Testar o recém-nascido na primeira semana" },
+                correctAnswer: "c"
+            },
+            {
+                question: "Sobre o HTLV-2, é correto afirmar que:",
+                answers: { a: "É mais patogênico que o HTLV-1 e causa ATLL", b: "Não está associado à ATLL e é considerado menos patogênico", c: "Possui as mesmas implicações clínicas que o HTLV-1", d: "Sua principal via de transmissão não é a amamentação" },
+                correctAnswer: "b"
+            },
+            {
+                question: "Após um teste de triagem (ELISA) para HTLV com resultado 'Reagente', qual é o próximo passo obrigatório?",
+                answers: { a: "Iniciar acompanhamento clínico anual imediatamente", b: "Notificar o caso como confirmado", c: "Repetir o teste de triagem em 3 meses", d: "Realizar um teste confirmatório (ex: Western Blot)" },
+                correctAnswer: "d"
+            },
+            {
+                question: "Qual o acompanhamento recomendado na Atenção Primária para uma pessoa assintomática vivendo com HTLV-1?",
+                answers: { a: "Consulta mensal com infectologista", b: "Nenhum, se não houver sintomas", c: "Consulta anual na APS para avaliação clínica", d: "Hemograma completo a cada 3 meses" },
+                correctAnswer: "c"
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let userAnswers = new Array(questions.length).fill(null);
+
+        function displayQuestion() {
+            if (currentQuestionIndex >= questions.length) {
+                showResults();
+                return;
+            }
+
+            const question = questions[currentQuestionIndex];
+            const output = [];
+            const answers = [];
+
+            for (const letter in question.answers) {
+                const isSelected = userAnswers[currentQuestionIndex] === letter;
+                answers.push(
+                    `<label class="answer-label block w-full text-left p-4 my-2 border rounded-lg cursor-pointer hover:bg-gray-100 transition duration-200 ${isSelected ? 'selected' : ''}">
+                        <input type="radio" name="question" value="${letter}" class="mr-3" onchange="selectAnswer('${letter}')" ${isSelected ? 'checked' : ''}>
+                        ${letter.toUpperCase()}: ${question.answers[letter]}
+                    </label>`
+                );
+            }
+
+            quizContainer.innerHTML = `
+                <div class="mb-4">
+                    <p class="text-gray-600 text-sm">Pergunta ${currentQuestionIndex + 1} de ${questions.length}</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: ${((currentQuestionIndex + 1) / questions.length) * 100}%"></div>
+                    </div>
+                </div>
+                <div class="font-semibold text-lg mb-4">${question.question}</div>
+                <div class="answers">${answers.join('')}</div>
+                <div class="flex justify-between mt-6">
+                    <button id="prev-btn" class="bg-gray-300 text-gray-800 font-bold py-2 px-6 rounded-full hover:bg-gray-400 transition duration-300 ${currentQuestionIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}" ${currentQuestionIndex === 0 ? 'disabled' : ''}>Anterior</button>
+                    <button id="next-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300">${currentQuestionIndex === questions.length - 1 ? 'Ver Resultado' : 'Próxima'}</button>
+                </div>
+            `;
+
+            document.getElementById('next-btn').addEventListener('click', nextQuestion);
+            if (currentQuestionIndex > 0) {
+                document.getElementById('prev-btn').addEventListener('click', prevQuestion);
+            }
+        }
+
+        function selectAnswer(answer) {
+            userAnswers[currentQuestionIndex] = answer;
+            // Re-render to show selection style
+            displayQuestion();
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            displayQuestion();
+        }
+
+        function prevQuestion() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                displayQuestion();
+            }
+        }
+
+        function showResults() {
+            let numCorrect = 0;
+            userAnswers.forEach((answer, index) => {
+                if (answer === questions[index].correctAnswer) {
+                    numCorrect++;
+                }
+            });
+
+            quizContainer.innerHTML = `
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-4">Quiz Concluído!</h3>
+                    <p class="text-xl mb-6">Você acertou <span class="font-bold text-blue-600">${numCorrect}</span> de <span class="font-bold">${questions.length}</span> questões.</p>
+                    <button id="restart-quiz" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300">Tentar Novamente</button>
+                    <button id="review-answers" class="bg-gray-200 text-gray-800 font-bold py-2 px-6 rounded-full hover:bg-gray-300 transition duration-300 ml-4">Revisar Respostas</button>
+                </div>
+            `;
+            document.getElementById('restart-quiz').addEventListener('click', restartQuiz);
+            document.getElementById('review-answers').addEventListener('click', reviewAnswers);
+        }
+
+        function reviewAnswers() {
+            let output = '<h3 class="text-2xl font-bold mb-6 text-center">Revisão do Quiz</h3>';
+             questions.forEach((q, index) => {
+                const userAnswer = userAnswers[index];
+                const isCorrect = userAnswer === q.correctAnswer;
+                
+                const answersHtml = Object.keys(q.answers).map(letter => {
+                    let style = 'border-gray-200';
+                    if (letter === q.correctAnswer) {
+                        style = 'bg-green-100 border-green-400';
+                    } else if (letter === userAnswer && !isCorrect) {
+                        style = 'bg-red-100 border-red-400';
+                    }
+                    return `<div class="p-3 my-2 border rounded-lg ${style}">${letter.toUpperCase()}: ${q.answers[letter]}</div>`;
+                }).join('');
+
+                output += `
+                    <div class="mb-6 p-4 rounded-lg shadow-sm bg-white">
+                        <p class="font-semibold">${index + 1}. ${q.question}</p>
+                        <div class="mt-2">${answersHtml}</div>
+                        <p class="mt-2 text-sm">Sua resposta: <span class="font-bold ${isCorrect ? 'text-green-600' : 'text-red-600'}">${userAnswer ? userAnswer.toUpperCase() : 'N/A'}</span>. Resposta Correta: <span class="font-bold text-green-600">${q.correctAnswer.toUpperCase()}</span>.</p>
+                    </div>
+                `;
+            });
+            output += `<div class="text-center mt-6"><button id="restart-quiz-2" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300">Tentar Novamente</button></div>`;
+            quizContainer.innerHTML = output;
+            document.getElementById('restart-quiz-2').addEventListener('click', restartQuiz);
+        }
+
+        function restartQuiz() {
+            currentQuestionIndex = 0;
+            userAnswers.fill(null);
+            displayQuestion();
+        }
+
+        // Initial load
+        displayQuestion();
+
+        // --- Active Nav Link on Scroll ---
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
