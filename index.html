@@ -82,8 +82,16 @@
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-8">
+    <!-- Start Section -->
+    <div id="start-section" class="text-center py-12 px-6 bg-gray-100">
+        <p class="text-gray-700 font-semibold mb-4 text-lg">Antes de iniciar o curso leia as instruções e faça a sua inscrição acima!</p>
+        <button id="start-btn" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 text-xl transform hover:scale-105">
+            Iniciar
+        </button>
+    </div>
+
+    <!-- Main Content (initially hidden) -->
+    <main id="main-content" class="container mx-auto px-6 py-8 hidden">
 
         <!-- Sessão 1: Resumo Detalhado -->
         <section id="resumo" class="mb-12 bg-white p-8 rounded-lg shadow-lg">
@@ -504,7 +512,6 @@
         const openModalBtn = document.getElementById('openModalBtn');
         const closeModalBtn = document.getElementById('closeModalBtn');
         const modal = document.getElementById('cursoLivreModal');
-        const modalContent = modal.querySelector('div');
 
         openModalBtn.addEventListener('click', () => {
             modal.classList.remove('hidden');
@@ -516,7 +523,6 @@
             modal.classList.remove('flex');
         });
 
-        // Close modal when clicking outside the content
         modal.addEventListener('click', (event) => {
             if (event.target === modal) {
                 modal.classList.add('hidden');
@@ -524,6 +530,19 @@
             }
         });
 
+        // --- Start Button Logic ---
+        const startBtn = document.getElementById('start-btn');
+        const startSection = document.getElementById('start-section');
+        const mainContent = document.getElementById('main-content');
+
+        startBtn.addEventListener('click', () => {
+            mainContent.classList.remove('hidden');
+            startSection.style.display = 'none';
+            window.scrollTo({
+                top: document.getElementById('resumo').offsetTop - 150, // Adjust for sticky header height
+                behavior: 'smooth'
+            });
+        });
 
         // Initial load
         displayQuestion();
