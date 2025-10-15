@@ -74,7 +74,9 @@
                 <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-8 text-sm sm:text-base">
                     <li><a href="#resumo" class="nav-link text-gray-300 hover:text-white transition duration-300">Resumo</a></li>
                     <li><a href="#semtempo" class="nav-link text-gray-300 hover:text-white transition duration-300">#semtempo</a></li>
+                    <li><a href="#pack-brasil" class="nav-link text-gray-300 hover:text-white transition duration-300">PACK Brasil</a></li>
                     <li><a href="#aprofundar" class="nav-link text-gray-300 hover:text-white transition duration-300">Aprofunde-se</a></li>
+                    <li><a href="#saiba-mais" class="nav-link text-gray-300 hover:text-white transition duration-300">Saiba Mais</a></li>
                     <li><a href="#quiz" class="nav-link text-gray-300 hover:text-white transition duration-300">Quiz Interativo</a></li>
                     <li><a href="#curso-livre" class="nav-link text-gray-300 hover:text-white transition duration-300">Certificação</a></li>
                 </ul>
@@ -230,35 +232,43 @@
         <!-- Sessão 2: #semtempo -->
         <section id="semtempo" class="mb-12 bg-white p-8 rounded-lg shadow-lg">
             <h2 class="text-2xl font-bold text-blue-700 mb-6 border-b-2 border-blue-200 pb-2">🚀 #semtempo? Sem problemas! 👇</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <!-- Video Column -->
-                <div class="w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                <!-- Main Content: Video -->
+                <div class="lg:col-span-1">
+                    <h3 class="font-semibold text-xl text-center mb-3">🎬 Vídeo-Resumo</h3>
                     <div class="rounded-lg overflow-hidden shadow-md aspect-video">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/KCl0flo70IE" title="Vídeo-Resumo HTLV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/ve7po5BkVJg" title="Vídeo-Resumo HTLV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                     <h3 class="font-semibold text-lg text-center mt-3">🎬 Vídeo-Resumo</h3>
-                     <p class="text-gray-600 text-sm text-center mt-1">Precisa visualizar a informação? Assista a este resumo rápido.</p>
+                    <p class="text-gray-600 text-sm text-center mt-2">Precisa visualizar a informação? Assista a este resumo rápido.</p>
                 </div>
-                <!-- Links Column -->
-                <div class="space-y-6">
-                    <div class="flex items-start space-x-4 bg-gray-50 p-4 rounded-lg border hover:shadow-md transition-shadow">
-                        <span class="text-3xl mt-1">🎧</span>
-                        <div>
-                            <h3 class="font-semibold text-lg">Podcast-Resumo</h3>
-                            <p class="text-gray-600">Sua dose de conhecimento no fone de ouvido! Perfeito para o trânsito ou a pausa para o café.</p>
-                            <a href="https://drive.google.com/file/d/1TksfVNNcEyy3WPfr-rOdEjecWn130bB7/view?usp=drive_link" target="_blank" class="text-blue-600 hover:underline inline-block mt-2 font-medium">Ouvir agora &rarr;</a>
-                        </div>
+                <!-- Side Content: Podcast and Chat -->
+                <div class="space-y-8">
+                    <div>
+                         <h3 class="font-semibold text-xl text-center mb-3">🎧 Podcast-Resumo</h3>
+                         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/41yjBYTsiERohPD059TwZq?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                         <p class="text-gray-600 text-sm text-center mt-2">Sua dose de conhecimento no fone de ouvido!</p>
                     </div>
-                    <div class="flex items-start space-x-4 bg-gray-50 p-4 rounded-lg border hover:shadow-md transition-shadow">
-                         <span class="text-3xl mt-1">🧠</span>
-                        <div>
-                            <h3 class="font-semibold text-lg">Chat Interativo</h3>
-                            <p class="text-gray-600">Tire suas dúvidas de forma rápida e prática com nosso assistente virtual.</p>
-                            <a href="http://bit.ly/chathtlv" target="_blank" class="text-blue-600 hover:underline inline-block mt-2 font-medium">Iniciar conversa &rarr;</a>
+                     <div>
+                        <h3 class="font-semibold text-xl text-center mb-3">🧠 Chat Interativo</h3>
+                        <div class="bg-gray-50 p-6 rounded-lg border hover:shadow-md transition-shadow text-center">
+                            <p class="text-gray-600 mb-4">Tire suas dúvidas de forma rápida e prática com nosso assistente virtual.</p>
+                            <a href="http://bit.ly/chathtlv" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300 inline-block">Iniciar conversa &rarr;</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Sessão PACK Brasil -->
+        <section id="pack-brasil" class="mb-12 bg-white p-8 rounded-lg shadow-lg text-center">
+            <h2 class="text-2xl font-bold text-blue-700 mb-6">HTLV no PACK Brasil</h2>
+            <div class="max-w-md mx-auto mb-6">
+                <img src="https://i.imgur.com/Boordmn.png" alt="Capa do guia PACK Brasil" class="rounded-lg shadow-md w-full">
+            </div>
+            <p class="text-gray-600 mb-6">Orientações sobre exames de cuidado pré-natal de rotina na primeira consulta.</p>
+            <a href="https://bit.ly/packfloripa2025" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block">
+                <i class="fas fa-download mr-2"></i>Baixar o PACK
+            </a>
         </section>
 
         <!-- Sessão 3: Aprofundar -->
@@ -276,6 +286,15 @@
             </div>
         </section>
 
+        <!-- Sessão Saiba Mais -->
+        <section id="saiba-mais" class="mb-12 bg-white p-8 rounded-lg shadow-lg text-center">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">Saiba Mais</h2>
+            <p class="text-gray-600 mb-6">Explore outros materiais e recursos disponíveis na pasta da Gestão da Clínica.</p>
+            <a href="https://drive.google.com/drive/folders/18GHJpGZVJnLuZY1JFwnZfQEXs-V5Lxd8" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block">
+                <i class="fas fa-folder-open mr-2"></i>Acessar Pasta da Gestão da Clínica
+            </a>
+        </section>
+
         <!-- Sessão 4: Quiz Interativo -->
         <section id="quiz" class="mb-12 bg-white p-8 rounded-lg shadow-lg">
             <h2 class="text-2xl font-bold text-blue-700 mb-6 text-center">Teste seus conhecimentos!</h2>
@@ -287,7 +306,7 @@
         <!-- Curso Livre Section -->
         <section id="curso-livre" class="bg-teal-50 border-t-4 border-teal-500 rounded-xl shadow-lg p-6 md:p-8 my-16 text-center">
             <h2 class="text-2xl font-bold text-teal-800 mb-4 flex items-center justify-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
                 Obtenha sua Certificação
             </h2>
             <p class="text-slate-600 mb-8 max-w-2xl mx-auto">Após estudar o conteúdo deste guia, realize o teste de aproveitamento para receber seu certificado.</p>
@@ -306,7 +325,7 @@
             <p class="font-semibold">Conhecimento prático para otimizar sua rotina.</p>
             <p class="text-gray-400 text-sm mt-1">Acesse nossos materiais para ficar por dentro de tudo!</p>
             <div class="mt-4 border-t border-gray-700 pt-4">
-                <p class="text-xs text-gray-500">Esta é uma produção do Departamento de Gestão da Clínica em parceria com a Escola de Saúde Pública de Florianópolis.</p>
+                <p class="text-xs text-gray-500">Esta é uma produção da Escola de Saúde Pública de Florianópolis em parceria com Departamento de Gestão da Clínica.</p>
                 <p class="text-xs text-gray-500 mt-1">© Secretaria Municipal de Saúde de Florianópolis</p>
             </div>
         </div>
@@ -548,7 +567,7 @@
         displayQuestion();
 
         // --- Active Nav Link on Scroll ---
-        const sections = document.querySelectorAll('section');
+        const sections = document.querySelectorAll('main > section');
         const navLinks = document.querySelectorAll('.nav-link');
 
         window.addEventListener('scroll', () => {
